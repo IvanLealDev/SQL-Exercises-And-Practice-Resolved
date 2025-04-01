@@ -14,32 +14,32 @@
 <br>
 <h2>CreacionTabla</h2>
 <p>Defines the structure of the EMPRESA database, creating three main tables:</p>
-<ol>
+<ul>
     <li>VENTAS: Contains sales information (number, type and date).</li>
     <li>ITEM_SALES: Records the products sold in each sale, with references to VENTAS and PRODUCTO.</li>
     <li>PRODUCTO: Stores product information, including price and description.</li>
-</ol>
+</ul>
 <br>
 <h2>Práctica SQL - Lenguaje estructurado de Consulta</h2>
 <p>Performs operations in the SQL_SERVER database, working with the Alumno table.</p>
-<ol>
+<ul>
     <li>Enter student data with their file, last name, first name, age, and residence.</li>
     <li>Run queries to filter students by residence, age, and last name.</li>
     <li>Some queries contain syntax errors (incorrect use of commas in WHERE).</li>
-</ol>
+</ul>
 <br>
 <h2>Relleno Tabla</h2>
 <p>Populate the EMPRESA database with test data.</p>
-<ol>
+<ul>
     <li>Deletes existing records in ITEM_VENTAS, VENTAS and PRODUCTO.</li>
     <li>Insert sales with different dates and types.</li>
     <li>Add products with name, price and description.</li>
     <li>Relates sales and products in ITEM_VENTAS.</li>
-</ol>
+</ul>
 <br>
 <h2>Select within Select - Base de Datos</h2>
 <p>Exercises with advanced queries using subqueries (SELECT within SELECT) on a database of countries (world).</p>
-<ol>
+<ul>
     <li>Find countries with larger populations than Russia.</li>
     <li>Filters European countries with a GDP per capita greater than that of the United Kingdom.</li>
     <li>Order countries on certain continents.</li>
@@ -50,20 +50,20 @@
     <li>List the first country alphabetically on each continent.</li>
     <li>Find continents where all countries have a population ≤ 25 million.</li>
     <li>Find countries with more than three times the population of any neighbor on their continent.</li>
-</ol>
+</ul>
 <br>
 <h2>SQLQuery1</h2>
 <p>Create and structure a database called tpn2, focused on a billing system.</p>
-<ol>
+<ul>
     <li>Defines the tables: Clientes, SitIva, Articulos, Marcas, Localidades, Facturas, DetallesFacturas, Distribuidores.</li>
     <li>Establishes foreign keys to ensure referential integrity.</li>
     <li>Insert test data into customers, items, brands, locations, invoices, and distributors.</li>
     <li>Create views for frequently asked queries, such as: Invoices from clients named “Pepe” and Clients from specific municipalities.</li>
-</ol>
+</ul>
 <br>
 <h2>SQLQuery2</h2>
 <p>This script creates and configures a database called TpTrigger with the following functionality:</p>
-<ol>
+<ul>
     Main tables:
     <ol>
         <li>Articulos: Store items with code, name, price, last purchase date, and brand reference.</li>
@@ -81,11 +81,11 @@
         <li>Updating the price of an item, which generates records in Logx.</li>
         <li>Attempts to insert items with invalid prices.</li>
     </ol>
-</ol>
+</ul>
 <br>
 <h2>SQLQuery3</h2>
 <p>This script sets up a database called TpTrigger2 with a more complex model, including customers, billing, and inventory.</p>
-<ol>
+<ul>
     Main tables:
     <ol>
         <li>Articulos: Similar to the other script, but with more attributes, such as stockActual and precioVenta.</li>
@@ -106,4 +106,4 @@
         <li>Attempts to modify prices, which generate eventos registrations.</li>
         <li>Inserting invoice details with negative amounts, which the trigger blocks.</li>
     </ol>
-</ol>
+</ul>
