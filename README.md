@@ -83,8 +83,7 @@
 <br>
 <h2>SQLQuery3</h2>
 <p>This script sets up a database called TpTrigger2 with a more complex model, including customers, billing, and inventory.</p>
-<ul>
-    Main tables:
+<p>Main tables:</p>
     <ul>
         <li>Articulos: Similar to the other script, but with more attributes, such as stockActual and precioVenta.</li>
         <li>Facturas and DetallesFacturas: Represent sales and their details.</li>
@@ -92,13 +91,13 @@
         <li>eventos: Records price modification attempts.</li>
         <li>Registro: Keep track of stock.</li>
     </ul>
-    Triggers:
+    <p>Triggers:</p>
     <ul>
         <li>itento_actualizar_precio: Records attempts to change prices on eventos, storing the date, user, and the values ​​before and after the change.</li>
         <li>actualizar_articulo: Decreases the stockActual when a sale is made. If the item doesn't exist in the Registro, it's inserted with a negative value.</li>
         <li>verificar_cantidad_negativa: Prevents the sale of items with negative quantities by recording the attempt in the Registro.</li>
     </ul>
-    Examples of use:
+    <p>Examples of use:</p>
     <ul>
         <li>Insertion of brands, articles, customers and invoices.</li>
         <li>Attempts to modify prices, which generate eventos registrations.</li>
