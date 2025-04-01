@@ -4,13 +4,13 @@
 
 <h2>Consultas</h2>
 <p>This file queries a database called EMPRESA, focusing on sales and products.</p>
-<ol>
+<ul>
     <li>Drop the ITEM_VENTAS, VENTAS, and PRODUCTO tables before running queries.</li>
     <li>Calculate the total amount of each sale by adding the quantity sold of each product multiplied by its unit price.</li>
     <li>Filter sales with an amount greater than 5000.</li>
     <li>Create a view (CantidadVendidaPorProducto) to get the total quantity sold for each product.</li>
     <li>Get the best and least sold product, using TOP 1 and ORDER BY.</li>
-</ol>
+</ul>
 <br>
 <h2>CreacionTabla</h2>
 <p>Defines the structure of the EMPRESA database, creating three main tables:</p>
