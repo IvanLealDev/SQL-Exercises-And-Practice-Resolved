@@ -63,47 +63,45 @@
 <br>
 <h2>SQLQuery2</h2>
 <p>This script creates and configures a database called TpTrigger with the following functionality:</p>
-<ul>
-    Main tables:
-    <ol>
+<p>Main tables:</p>
+    <ul>
         <li>Articulos: Store items with code, name, price, last purchase date, and brand reference.</li>
         <li>Marcas: Contains the brands of the items.</li>
         <li>Logx: Records changes to items.</li>
-    </ol>
-    Triggers:
-    <ol>
+    </ul>
+    <p>Triggers:</p>
+    <ul>
         <li>primerTrig: Triggered after an update to Articulos, recording the price change in Logx. It's modified to include the date of the change and the user who made it.</li>
         <li>segundoTrig: Prevents the insertion of items with zero or negative prices.</li>
-    </ol>
-    Examples of use:
-    <ol>
+    </ul>
+    <p>Examples of use:</p>
+    <ul>
         <li>Insertion of brands and articles.</li>
         <li>Updating the price of an item, which generates records in Logx.</li>
         <li>Attempts to insert items with invalid prices.</li>
-    </ol>
-</ul>
+    </ul>
 <br>
 <h2>SQLQuery3</h2>
 <p>This script sets up a database called TpTrigger2 with a more complex model, including customers, billing, and inventory.</p>
 <ul>
     Main tables:
-    <ol>
+    <ul>
         <li>Articulos: Similar to the other script, but with more attributes, such as stockActual and precioVenta.</li>
         <li>Facturas and DetallesFacturas: Represent sales and their details.</li>
         <li>Clients, SitIva, Localidades: Manage client information and their tax status.</li>
         <li>eventos: Records price modification attempts.</li>
         <li>Registro: Keep track of stock.</li>
-    </ol>
+    </ul>
     Triggers:
-    <ol>
+    <ul>
         <li>itento_actualizar_precio: Records attempts to change prices on eventos, storing the date, user, and the values ​​before and after the change.</li>
         <li>actualizar_articulo: Decreases the stockActual when a sale is made. If the item doesn't exist in the Registro, it's inserted with a negative value.</li>
         <li>verificar_cantidad_negativa: Prevents the sale of items with negative quantities by recording the attempt in the Registro.</li>
-    </ol>
+    </ul>
     Examples of use:
-    <ol>
+    <ul>
         <li>Insertion of brands, articles, customers and invoices.</li>
         <li>Attempts to modify prices, which generate eventos registrations.</li>
         <li>Inserting invoice details with negative amounts, which the trigger blocks.</li>
-    </ol>
+    </ul>
 </ul>
